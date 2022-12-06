@@ -54,7 +54,7 @@
                                                             <constraint firstAttribute="width" constant="232" id="ZYo-RI-iuY"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="rhy-QC-Mvk">
+                                                    <pageControl opaque="NO" contentMode="scaleToFill" enabled="NO" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="rhy-QC-Mvk">
                                                         <rect key="frame" x="126.5" y="423" width="122.5" height="9"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="9" id="5g5-kL-ddG"/>
