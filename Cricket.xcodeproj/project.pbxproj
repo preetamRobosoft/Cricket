@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		582406BD293F6FCE00538FF2 /* MainPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582406BC293F6FCE00538FF2 /* MainPageController.swift */; };
 		66214670293F54DB006E2880 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6621466F293F54DB006E2880 /* AppDelegate.swift */; };
 		66214672293F54DB006E2880 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66214671293F54DB006E2880 /* SceneDelegate.swift */; };
 		66214674293F54DB006E2880 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66214673293F54DB006E2880 /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		582406BC293F6FCE00538FF2 /* MainPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageController.swift; sourceTree = "<group>"; };
 		6621466C293F54DB006E2880 /* Cricket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cricket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6621466F293F54DB006E2880 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66214671293F54DB006E2880 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			children = (
 				66214673293F54DB006E2880 /* ViewController.swift */,
 				662146CE293F56D2006E2880 /* OnboardingViewController.swift */,
+				582406BC293F6FCE00538FF2 /* MainPageController.swift */,
 				662146D3293F56F6006E2880 /* HomeViewController.swift */,
 			);
 			path = Controller;
@@ -345,6 +348,7 @@
 				6621467A293F54DB006E2880 /* Cricket.xcdatamodeld in Sources */,
 				66214670293F54DB006E2880 /* AppDelegate.swift in Sources */,
 				662146CF293F56D2006E2880 /* OnboardingViewController.swift in Sources */,
+				582406BD293F6FCE00538FF2 /* MainPageController.swift in Sources */,
 				66214672293F54DB006E2880 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,6 +527,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Cricket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -541,6 +546,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Cricket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
