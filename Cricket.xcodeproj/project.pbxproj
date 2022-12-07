@@ -29,6 +29,8 @@
 		7218C059293F70BA009363EB /* CustomCodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7218C058293F70BA009363EB /* CustomCodeTextField.swift */; };
 		7218C05E293F7427009363EB /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7218C05D293F7427009363EB /* HomeTableViewCell.swift */; };
 		7218C063293F7D6B009363EB /* MatchStatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7218C062293F7D6B009363EB /* MatchStatusLabel.swift */; };
+		723351B529408F360080F9AC /* SuccessFailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723351B429408F360080F9AC /* SuccessFailViewController.swift */; };
+		723351BD2940911D0080F9AC /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723351BC2940911C0080F9AC /* PasswordViewController.swift */; };
 		72C2B87A294047D700DA5C44 /* MainPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C2B879294047D700DA5C44 /* MainPageController.swift */; };
 		72C2B87F29404F7500DA5C44 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C2B87E29404F7500DA5C44 /* CustomImageView.swift */; };
 		72C2B8842940584C00DA5C44 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C2B8832940584C00DA5C44 /* MenuViewModel.swift */; };
@@ -38,7 +40,6 @@
 		72C2B89E29406C7800DA5C44 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C2B89D29406C7800DA5C44 /* RadioButton.swift */; };
 		72C2B8A329406CFC00DA5C44 /* ProfilePhotoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C2B8A229406CFC00DA5C44 /* ProfilePhotoImageView.swift */; };
 		72C2B8A829406D2D00DA5C44 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C2B8A729406D2D00DA5C44 /* TriangleView.swift */; };
-		72C2B8B02940892B00DA5C44 /* SuccessFailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C2B8AF2940892B00DA5C44 /* SuccessFailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,8 @@
 		7218C058293F70BA009363EB /* CustomCodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCodeTextField.swift; sourceTree = "<group>"; };
 		7218C05D293F7427009363EB /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		7218C062293F7D6B009363EB /* MatchStatusLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchStatusLabel.swift; sourceTree = "<group>"; };
+		723351B429408F360080F9AC /* SuccessFailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessFailViewController.swift; sourceTree = "<group>"; };
+		723351BC2940911C0080F9AC /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		72C2B879294047D700DA5C44 /* MainPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageController.swift; sourceTree = "<group>"; };
 		72C2B87E29404F7500DA5C44 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		72C2B8832940584C00DA5C44 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
@@ -96,7 +99,6 @@
 		72C2B89D29406C7800DA5C44 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		72C2B8A229406CFC00DA5C44 /* ProfilePhotoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoImageView.swift; sourceTree = "<group>"; };
 		72C2B8A729406D2D00DA5C44 /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
-		72C2B8AF2940892B00DA5C44 /* SuccessFailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessFailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,7 +234,8 @@
 				662146D8293F5718006E2880 /* MenuViewController.swift */,
 				72C2B879294047D700DA5C44 /* MainPageController.swift */,
 				72C2B89829406B5400DA5C44 /* LoginViewController.swift */,
-				72C2B8AF2940892B00DA5C44 /* SuccessFailViewController.swift */,
+				723351B429408F360080F9AC /* SuccessFailViewController.swift */,
+				723351BC2940911C0080F9AC /* PasswordViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -380,7 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				662146A7293F54F6006E2880 /* Model.swift in Sources */,
-				72C2B8B02940892B00DA5C44 /* SuccessFailViewController.swift in Sources */,
+				723351B529408F360080F9AC /* SuccessFailViewController.swift in Sources */,
 				66214674293F54DB006E2880 /* ViewController.swift in Sources */,
 				72C2B8A829406D2D00DA5C44 /* TriangleView.swift in Sources */,
 				7218C063293F7D6B009363EB /* MatchStatusLabel.swift in Sources */,
@@ -396,6 +399,7 @@
 				72C2B8A329406CFC00DA5C44 /* ProfilePhotoImageView.swift in Sources */,
 				72C2B88E294058C600DA5C44 /* CreateTournamentViewModel.swift in Sources */,
 				72C2B8892940589600DA5C44 /* ViewMatchViewModel.swift in Sources */,
+				723351BD2940911D0080F9AC /* PasswordViewController.swift in Sources */,
 				6621467A293F54DB006E2880 /* Cricket.xcdatamodeld in Sources */,
 				72C2B89E29406C7800DA5C44 /* RadioButton.swift in Sources */,
 				66214670293F54DB006E2880 /* AppDelegate.swift in Sources */,

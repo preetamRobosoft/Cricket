@@ -32,4 +32,11 @@ class LoginViewController: UIViewController {
             navigationController?.popViewController(animated: true)
 
         }
+    @IBAction func onClickForgotPassword(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "PasswordViewController") as? PasswordViewController
+        guard let passwordVc = vc else {
+            return
+        }
+        navigationController?.pushViewController(passwordVc, animated: true)
+    }
 }
