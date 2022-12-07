@@ -24,6 +24,11 @@
 		662146D4293F56F6006E2880 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662146D3293F56F6006E2880 /* HomeViewController.swift */; };
 		662146D9293F5718006E2880 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662146D8293F5718006E2880 /* MenuViewController.swift */; };
 		662146DE293F573D006E2880 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662146DD293F573D006E2880 /* RegisterViewController.swift */; };
+		662146F1293F77A1006E2880 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662146F0293F77A1006E2880 /* RegisterPageViewController.swift */; };
+		66AB2DA3293F82F80002F409 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB2DA2293F82F80002F409 /* RadioButton.swift */; };
+		66AB2DA8293F841D0002F409 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB2DA7293F841D0002F409 /* RegisterViewModel.swift */; };
+		66AB2DFA29405CD40002F409 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB2DF929405CD40002F409 /* TriangleView.swift */; };
+		66AB2DFF294068210002F409 /* ProfilePhotImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB2DFE294068210002F409 /* ProfilePhotImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,11 @@
 		662146D3293F56F6006E2880 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		662146D8293F5718006E2880 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		662146DD293F573D006E2880 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		662146F0293F77A1006E2880 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
+		66AB2DA2293F82F80002F409 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		66AB2DA7293F841D0002F409 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		66AB2DF929405CD40002F409 /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
+		66AB2DFE294068210002F409 /* ProfilePhotImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +132,6 @@
 				662146C6293F5557006E2880 /* Controller */,
 				662146BD293F5537006E2880 /* NetworkManager */,
 				66214675293F54DB006E2880 /* Main.storyboard */,
-				662146DD293F573D006E2880 /* RegisterViewController.swift */,
-				662146D8293F5718006E2880 /* MenuViewController.swift */,
 				6621467B293F54DC006E2880 /* Assets.xcassets */,
 				6621467D293F54DC006E2880 /* LaunchScreen.storyboard */,
 				66214680293F54DC006E2880 /* Info.plist */,
@@ -162,6 +170,9 @@
 			isa = PBXGroup;
 			children = (
 				662146AC293F5510006E2880 /* View.swift */,
+				66AB2DA2293F82F80002F409 /* RadioButton.swift */,
+				66AB2DF929405CD40002F409 /* TriangleView.swift */,
+				66AB2DFE294068210002F409 /* ProfilePhotImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				662146B5293F5533006E2880 /* MatchViewModel.swift */,
+				66AB2DA7293F841D0002F409 /* RegisterViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -188,6 +200,9 @@
 				66214673293F54DB006E2880 /* ViewController.swift */,
 				662146CE293F56D2006E2880 /* OnboardingViewController.swift */,
 				662146D3293F56F6006E2880 /* HomeViewController.swift */,
+				662146DD293F573D006E2880 /* RegisterViewController.swift */,
+				662146D8293F5718006E2880 /* MenuViewController.swift */,
+				662146F0293F77A1006E2880 /* RegisterPageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -334,7 +349,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66AB2DFF294068210002F409 /* ProfilePhotImageView.swift in Sources */,
 				662146A7293F54F6006E2880 /* Model.swift in Sources */,
+				66AB2DA8293F841D0002F409 /* RegisterViewModel.swift in Sources */,
+				66AB2DA3293F82F80002F409 /* RadioButton.swift in Sources */,
+				662146F1293F77A1006E2880 /* RegisterPageViewController.swift in Sources */,
 				66214674293F54DB006E2880 /* ViewController.swift in Sources */,
 				662146B6293F5533006E2880 /* MatchViewModel.swift in Sources */,
 				662146DE293F573D006E2880 /* RegisterViewController.swift in Sources */,
@@ -345,6 +364,7 @@
 				6621467A293F54DB006E2880 /* Cricket.xcdatamodeld in Sources */,
 				66214670293F54DB006E2880 /* AppDelegate.swift in Sources */,
 				662146CF293F56D2006E2880 /* OnboardingViewController.swift in Sources */,
+				66AB2DFA29405CD40002F409 /* TriangleView.swift in Sources */,
 				66214672293F54DB006E2880 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,6 +543,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Cricket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -541,6 +562,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Cricket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
