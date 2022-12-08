@@ -8,22 +8,85 @@
 import UIKit
 
 class PasswordViewController: UIViewController {
-
+    
+    @IBOutlet weak var setPasswordView: UIView!
+    @IBOutlet weak var forgotPassword: UIView!
+    @IBOutlet weak var proceedButton: UIButton!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var confirmPasswordTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    var isForgotPassword = false
+    var currentViewModel: RegistrationViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        configure()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func configure() {
+        
+        _ = self.proceedButton.applyGradient( colours: [ #colorLiteral(red: 1, green: 0.7294117647, blue: 0.5490196078, alpha: 1), #colorLiteral(red: 0.9960784314, green: 0.3607843137, blue: 0.4156862745, alpha: 1)], cornerRadius: 4)
+        
+        if isForgotPassword{
+            setUpForgotPassword()
+            
+        } else {
+            setUpSetPassword()
+        }
     }
-    */
-
+    func setUpSetPassword() {
+        setPasswordView.isHidden = false
+        forgotPassword.isHidden = true
+    }
+    
+    func setUpForgotPassword() {
+        setPasswordView.isHidden = true
+        forgotPassword.isHidden = false
+    }
+    
+    @IBAction func passEyeButtonTapped(_ sender: Any) {
+        if passwordTextField.isSecureTextEntry {
+            passwordTextField.isSecureTextEntry = false
+        } else {
+            passwordTextField.isSecureTextEntry = true
+        }
+    }
+    
+    @IBAction func rePassEyeTapped(_ sender: Any) {
+        if confirmPasswordTextField.isSecureTextEntry {
+            confirmPasswordTextField.isSecureTextEntry = false
+        } else {
+            confirmPasswordTextField.isSecureTextEntry = true
+        }
+    }
+    
+    @IBAction func onBackTapped(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func onProceedTapped(_ sender: Any) {
+        if !isForgotPassword {
+            currentViewModel?.password = passwordTextField.text!
+            currentViewModel?.confirmPassword = confirmPasswordTextField.text!
+            
+            guard passwordMatchValidation(password: currentViewModel!.password  , rePassword: currentViewModel!.confirmPassword) else {
+                //TODO: add a warning label
+                //            nameWarningLabel.Text = "Username can't be empty"
+                print("password doesnt match")
+                return
+            }
+            
+            guard let password = currentViewModel?.password else {return}
+            currentViewModel?.currentUser.password = password
+            currentViewModel?.assignParameters()
+            currentViewModel?.registerCurrentUser { isSuccess in
+                if isSuccess {
+                    print("Successful registraion")
+                }
+            }
+            navigationController?.popViewController(animated: true)
+            navigationController?.popViewController(animated: true)
+        }
+    }
 }

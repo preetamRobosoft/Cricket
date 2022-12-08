@@ -9,7 +9,6 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var facebookLoginButton: UIButton!
     
@@ -32,11 +31,10 @@ class LoginViewController: UIViewController {
             navigationController?.popViewController(animated: true)
 
         }
+    
     @IBAction func onClickForgotPassword(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "PasswordViewController") as? PasswordViewController
-        guard let passwordVc = vc else {
-            return
-        }
-        navigationController?.pushViewController(passwordVc, animated: true)
+        let vc = storyboard?.instantiateViewController(identifier: "PasswordViewController") as! PasswordViewController
+        vc.isForgotPassword = true
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
