@@ -15,6 +15,7 @@ class PasswordViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
+    
     var isForgotPassword = false
     var currentViewModel: RegistrationViewModel?
     
@@ -66,27 +67,56 @@ class PasswordViewController: UIViewController {
     }
     
     @IBAction func onProceedTapped(_ sender: Any) {
-        if !isForgotPassword {
-            currentViewModel?.password = passwordTextField.text!
-            currentViewModel?.confirmPassword = confirmPasswordTextField.text!
+        if isForgotPassword {
+            onProceedClickForForgotPassword()
+        } else {
+            onProceedClickForSetUpPassword()
+        }
             
-            guard passwordMatchValidation(password: currentViewModel!.password  , rePassword: currentViewModel!.confirmPassword) else {
-                //TODO: add a warning label
-                //            nameWarningLabel.Text = "Username can't be empty"
-                print("password doesnt match")
-                return
-            }
-            
-            guard let password = currentViewModel?.password else {return}
-            currentViewModel?.currentUser.password = password
-            currentViewModel?.assignParameters()
-            currentViewModel?.registerCurrentUser { isSuccess in
-                if isSuccess {
-                    print("Successful registraion")
+    }
+    
+    func onProceedClickForSetUpPassword() {
+        currentViewModel?.password = passwordTextField.text!
+        currentViewModel?.confirmPassword = confirmPasswordTextField.text!
+        
+        guard passwordMatchValidation(password: currentViewModel!.password  , rePassword: currentViewModel!.confirmPassword) else {
+            //TODO: add a warning label
+            //            nameWarningLabel.Text = "Username can't be empty"
+            print("password doesnt match")
+            return
+        }
+        
+        guard let password = currentViewModel?.password else {return}
+        currentViewModel?.currentUser.password = password
+        currentViewModel?.assignParameters()
+        currentViewModel?.registerCurrentUser { isSuccess in
+            if isSuccess {
+                print("Successful registraion")
+
+                self.currentViewModel?.currentUserEmail = (self.currentViewModel?.currentUser.email)!
+                self.currentViewModel?.sendOTP() { didSendOTP in
+                    if didSendOTP {
+                        print("OTP Sent")
+                    }
+                }
+            } else {
+                DispatchQueue.main.async {
+                    guard let vc =  self.storyboard?.instantiateViewController(identifier: "SuccessFailViewController") as? SuccessFailViewController
+                    else {
+                        return
+                    }
+                    vc.didSuccessfullyRegister = false
+                    self.navigationController?.pushViewController(vc, animated: true)
                 }
             }
-            navigationController?.popViewController(animated: true)
-            navigationController?.popViewController(animated: true)
         }
+        
+        let otpVC = storyboard?.instantiateViewController(identifier: "OTPVerificationVC") as! OTPVerificationVC
+        otpVC.registerVM = currentViewModel
+        navigationController?.pushViewController(otpVC, animated: true)
+    }
+    
+    func onProceedClickForForgotPassword() {
+//        
     }
 }

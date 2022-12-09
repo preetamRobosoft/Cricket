@@ -94,14 +94,6 @@ class RegisterViewController: UIViewController {
         }
         let newPhone = phone.trimmingCharacters(in: .whitespaces)
         
-//        TODO
-//        guard validateMobileNumber(number: newPhone)  else {
-//            //TODO: add a warning label
-//            //            nameWarningLabel.Text = "Username can't be empty"
-//            print("invalid phone")
-//            return false
-//        }
-        
         registerVM.currentUser.username = name
         registerVM.currentUser.email = email
         registerVM.currentUser.phoneNumber = newPhone
@@ -118,6 +110,7 @@ extension RegisterViewController: UIImagePickerControllerDelegate, UINavigationC
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let fetchedImage = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerEditedImage")] as? UIImage
         profileImage.image = fetchedImage
+        registerVM.currentUser.profilePhoto = fetchedImage
         picker.dismiss(animated: true, completion: nil)
 
     }

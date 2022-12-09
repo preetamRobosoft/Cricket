@@ -28,6 +28,11 @@
 		66AB2E642940AA690002F409 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB2E632940AA690002F409 /* RegisterViewModel.swift */; };
 		66AB2E6A2940ADE50002F409 /* NewUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB2E692940ADE50002F409 /* NewUser.swift */; };
 		66AB2E6F2940DAB70002F409 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB2E6E2940DAB70002F409 /* Validation.swift */; };
+		66AB2E872941C6270002F409 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB2E862941C6270002F409 /* User.swift */; };
+		66AB2E912941C9840002F409 /* MasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB2E902941C9840002F409 /* MasterViewModel.swift */; };
+		66AB2EA42942E3670002F409 /* Tournament.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66AB2EA32942E3670002F409 /* Tournament.storyboard */; };
+		66AB2EB02942F4150002F409 /* OTPVerificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB2EAF2942F4150002F409 /* OTPVerificationVC.swift */; };
+		66AB2EB8294314D70002F409 /* TournamentCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB2EB7294314D70002F409 /* TournamentCodeViewController.swift */; };
 		7218C04F293F6901009363EB /* CustomEnterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7218C04E293F6901009363EB /* CustomEnterButton.swift */; };
 		7218C054293F6EB8009363EB /* GradientButtonBackGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7218C053293F6EB7009363EB /* GradientButtonBackGround.swift */; };
 		7218C059293F70BA009363EB /* CustomCodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7218C058293F70BA009363EB /* CustomCodeTextField.swift */; };
@@ -91,6 +96,11 @@
 		66AB2E632940AA690002F409 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		66AB2E692940ADE50002F409 /* NewUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUser.swift; sourceTree = "<group>"; };
 		66AB2E6E2940DAB70002F409 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		66AB2E862941C6270002F409 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		66AB2E902941C9840002F409 /* MasterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewModel.swift; sourceTree = "<group>"; };
+		66AB2EA32942E3670002F409 /* Tournament.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tournament.storyboard; sourceTree = "<group>"; };
+		66AB2EAF2942F4150002F409 /* OTPVerificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerificationVC.swift; sourceTree = "<group>"; };
+		66AB2EB7294314D70002F409 /* TournamentCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentCodeViewController.swift; sourceTree = "<group>"; };
 		7218C04E293F6901009363EB /* CustomEnterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEnterButton.swift; sourceTree = "<group>"; };
 		7218C053293F6EB7009363EB /* GradientButtonBackGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonBackGround.swift; sourceTree = "<group>"; };
 		7218C058293F70BA009363EB /* CustomCodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCodeTextField.swift; sourceTree = "<group>"; };
@@ -162,6 +172,7 @@
 				662146C6293F5557006E2880 /* Controller */,
 				662146BD293F5537006E2880 /* NetworkManager */,
 				66214675293F54DB006E2880 /* Main.storyboard */,
+				66AB2EA32942E3670002F409 /* Tournament.storyboard */,
 				6621467B293F54DC006E2880 /* Assets.xcassets */,
 				6621467D293F54DC006E2880 /* LaunchScreen.storyboard */,
 				66214680293F54DC006E2880 /* Info.plist */,
@@ -191,6 +202,7 @@
 		662146A5293F54E5006E2880 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				66AB2E852941C6030002F409 /* LogIn */,
 				66AB2E682940ADBC0002F409 /* Registration */,
 				662146A6293F54F6006E2880 /* Model.swift */,
 			);
@@ -224,6 +236,7 @@
 				66AB2E5E2940A19A0002F409 /* RecentActivityViewModel.swift */,
 				66AB2E632940AA690002F409 /* RegisterViewModel.swift */,
 				66AB2E6E2940DAB70002F409 /* Validation.swift */,
+				66AB2E902941C9840002F409 /* MasterViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -248,6 +261,8 @@
 				72C2B89829406B5400DA5C44 /* LoginViewController.swift */,
 				723351B429408F360080F9AC /* SuccessFailViewController.swift */,
 				723351BC2940911C0080F9AC /* PasswordViewController.swift */,
+				66AB2EAF2942F4150002F409 /* OTPVerificationVC.swift */,
+				66AB2EB7294314D70002F409 /* TournamentCodeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -270,6 +285,14 @@
 				66AB2E692940ADE50002F409 /* NewUser.swift */,
 			);
 			path = Registration;
+			sourceTree = "<group>";
+		};
+		66AB2E852941C6030002F409 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				66AB2E862941C6270002F409 /* User.swift */,
+			);
+			path = LogIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6621467F293F54DC006E2880 /* LaunchScreen.storyboard in Resources */,
+				66AB2EA42942E3670002F409 /* Tournament.storyboard in Resources */,
 				6621467C293F54DC006E2880 /* Assets.xcassets in Resources */,
 				66214677293F54DB006E2880 /* Main.storyboard in Resources */,
 			);
@@ -402,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66AB2E912941C9840002F409 /* MasterViewModel.swift in Sources */,
 				662146A7293F54F6006E2880 /* Model.swift in Sources */,
 				66AB2E642940AA690002F409 /* RegisterViewModel.swift in Sources */,
 				723351B529408F360080F9AC /* SuccessFailViewController.swift in Sources */,
@@ -413,6 +438,7 @@
 				662146B6293F5533006E2880 /* ManageMatchViewModel.swift in Sources */,
 				662146DE293F573D006E2880 /* RegisterViewController.swift in Sources */,
 				662146AD293F5510006E2880 /* View.swift in Sources */,
+				66AB2EB02942F4150002F409 /* OTPVerificationVC.swift in Sources */,
 				662146D9293F5718006E2880 /* MenuViewController.swift in Sources */,
 				662146BF293F5549006E2880 /* NetworkManager.swift in Sources */,
 				662146D4293F56F6006E2880 /* HomeViewController.swift in Sources */,
@@ -428,12 +454,14 @@
 				66214670293F54DB006E2880 /* AppDelegate.swift in Sources */,
 				72C2B87F29404F7500DA5C44 /* CustomImageView.swift in Sources */,
 				662146CF293F56D2006E2880 /* OnboardingViewController.swift in Sources */,
+				66AB2EB8294314D70002F409 /* TournamentCodeViewController.swift in Sources */,
 				7218C054293F6EB8009363EB /* GradientButtonBackGround.swift in Sources */,
 				7218C059293F70BA009363EB /* CustomCodeTextField.swift in Sources */,
 				66AB2E5F2940A19A0002F409 /* RecentActivityViewModel.swift in Sources */,
 				7218C04F293F6901009363EB /* CustomEnterButton.swift in Sources */,
 				7218C05E293F7427009363EB /* HomeTableViewCell.swift in Sources */,
 				66214672293F54DB006E2880 /* SceneDelegate.swift in Sources */,
+				66AB2E872941C6270002F409 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,16 +11,31 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var createTournament: UIButton!
+    @IBOutlet weak var contentViewHeight: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpView()
         tableView.delegate = self
         tableView.dataSource = self
+        setScrollViewHeight()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        setScrollViewHeight()
     }
     
     private func setUpView() {
         navigationController?.navigationBar.isHidden = true
         _ = self.createTournament.applyGradient(colours: [#colorLiteral(red: 1, green: 0.7294117647, blue: 0.5490196078, alpha: 1), #colorLiteral(red: 0.9960784314, green: 0.3607843137, blue: 0.4156862745, alpha: 1)], cornerRadius: CGFloat(4))
+    }
+    
+    func setScrollViewHeight() {
+        let height = UIScreen.main.bounds.height
+        
+        if height > contentViewHeight.constant {
+            contentViewHeight.constant = height
+        }
     }
     
     @IBAction func onClickBurgerMenu(_ sender: Any) {

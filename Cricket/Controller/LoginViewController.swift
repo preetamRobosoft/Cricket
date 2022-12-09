@@ -9,8 +9,11 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var facebookLoginButton: UIButton!
+    let loginVM = RegistrationViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,5 +39,23 @@ class LoginViewController: UIViewController {
         let vc = storyboard?.instantiateViewController(identifier: "PasswordViewController") as! PasswordViewController
         vc.isForgotPassword = true
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func onLogInTapped(_ sender: UIButton) {
+        guard let email = emailTextField.text, email != "" else {
+            alertAction(controller: self, message: "Email Field is emapty")
+            return
+        }
+        
+        guard let password = passwordTextField.text, password != "" else {
+            alertAction(controller: self, message: "Password Field is emapty")
+            return
+        }
+        
+        loginVM.user = User(emai: email, password: password)
+        loginVM.assignHeaders()
+        loginVM.logInUser { (successFulLogIn) in
+            print(successFulLogIn, "success")
+        }
     }
 }

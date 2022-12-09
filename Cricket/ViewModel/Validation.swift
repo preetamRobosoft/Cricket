@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 public func passwordMatchValidation(password: String, rePassword: String) -> Bool {
     
@@ -46,5 +47,15 @@ func validateMobileNumber(number: String) -> Bool {
     let phonePred = NSPredicate(format:"SELF MATCHES %@", phoneRegEx)
 
     return phonePred.evaluate(with: number)
+
+}
+
+func alertAction(controller: UIViewController, message: String) {
+
+    let alert = UIAlertController(title: "Alert", message: "\(message)", preferredStyle: .alert)
+
+    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+
+    controller.present(alert, animated: true, completion: nil)
 
 }

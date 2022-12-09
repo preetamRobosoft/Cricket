@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class NewUser {
     
@@ -17,7 +18,7 @@ class NewUser {
     var city: String?
     var age: Int?
     var password: String
-    // TODO:  profilePhoto
+    var profilePhoto: UIImage?
     
     init() {
         self.userID = 0
