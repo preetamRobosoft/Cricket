@@ -41,9 +41,6 @@
 		723351B529408F360080F9AC /* SuccessFailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723351B429408F360080F9AC /* SuccessFailViewController.swift */; };
 		723351BD2940911D0080F9AC /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723351BC2940911C0080F9AC /* PasswordViewController.swift */; };
 		728E7B4B2944469F00C471AC /* AddTeamListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728E7B4A2944469F00C471AC /* AddTeamListViewController.swift */; };
-		728E7B5E29444AA300C471AC /* UmpiresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728E7B5D29444AA300C471AC /* UmpiresViewController.swift */; };
-		728E7B6329444B2E00C471AC /* GroundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728E7B6229444B2E00C471AC /* GroundsViewController.swift */; };
-		728E7B6829444B9E00C471AC /* AddUmpireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728E7B6729444B9D00C471AC /* AddUmpireViewController.swift */; };
 		72C2B87A294047D700DA5C44 /* MainPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C2B879294047D700DA5C44 /* MainPageController.swift */; };
 		72C2B87F29404F7500DA5C44 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C2B87E29404F7500DA5C44 /* CustomImageView.swift */; };
 		72C2B8842940584C00DA5C44 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C2B8832940584C00DA5C44 /* MenuViewModel.swift */; };
@@ -113,9 +110,6 @@
 		723351B429408F360080F9AC /* SuccessFailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessFailViewController.swift; sourceTree = "<group>"; };
 		723351BC2940911C0080F9AC /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		728E7B4A2944469F00C471AC /* AddTeamListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeamListViewController.swift; sourceTree = "<group>"; };
-		728E7B5D29444AA300C471AC /* UmpiresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UmpiresViewController.swift; sourceTree = "<group>"; };
-		728E7B6229444B2E00C471AC /* GroundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundsViewController.swift; sourceTree = "<group>"; };
-		728E7B6729444B9D00C471AC /* AddUmpireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUmpireViewController.swift; sourceTree = "<group>"; };
 		72C2B879294047D700DA5C44 /* MainPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageController.swift; sourceTree = "<group>"; };
 		72C2B87E29404F7500DA5C44 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		72C2B8832940584C00DA5C44 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
@@ -272,9 +266,6 @@
 				66AB2EAF2942F4150002F409 /* OTPVerificationVC.swift */,
 				66AB2EB7294314D70002F409 /* TournamentCodeViewController.swift */,
 				728E7B4A2944469F00C471AC /* AddTeamListViewController.swift */,
-				728E7B5D29444AA300C471AC /* UmpiresViewController.swift */,
-				728E7B6229444B2E00C471AC /* GroundsViewController.swift */,
-				728E7B6729444B9D00C471AC /* AddUmpireViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -452,13 +443,10 @@
 				662146AD293F5510006E2880 /* View.swift in Sources */,
 				66AB2EB02942F4150002F409 /* OTPVerificationVC.swift in Sources */,
 				662146D9293F5718006E2880 /* MenuViewController.swift in Sources */,
-				728E7B5E29444AA300C471AC /* UmpiresViewController.swift in Sources */,
 				662146BF293F5549006E2880 /* NetworkManager.swift in Sources */,
 				662146D4293F56F6006E2880 /* HomeViewController.swift in Sources */,
 				72C2B87A294047D700DA5C44 /* MainPageController.swift in Sources */,
-				728E7B6829444B9E00C471AC /* AddUmpireViewController.swift in Sources */,
 				72C2B8A329406CFC00DA5C44 /* ProfilePhotoImageView.swift in Sources */,
-				728E7B6329444B2E00C471AC /* GroundsViewController.swift in Sources */,
 				72C2B88E294058C600DA5C44 /* CreateTournamentViewModel.swift in Sources */,
 				72C2B8892940589600DA5C44 /* ViewMatchViewModel.swift in Sources */,
 				723351BD2940911D0080F9AC /* PasswordViewController.swift in Sources */,
