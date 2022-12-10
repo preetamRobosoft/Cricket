@@ -1867,12 +1867,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWq-Dx-Fzb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <connections>
-                                    <segue destination="iS4-yL-SnO" kind="embed" id="tZV-mE-HYJ"/>
-                                </connections>
-                            </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xha-j4-ymP">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                 <subviews>
@@ -2186,6 +2180,12 @@
                                     <constraint firstItem="8MR-H0-Xzg" firstAttribute="leading" secondItem="rpb-I7-Nph" secondAttribute="leading" id="wLB-vK-zGr"/>
                                 </constraints>
                             </scrollView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWq-Dx-Fzb" userLabel="Hamburger Menu View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <segue destination="iS4-yL-SnO" kind="embed" id="tZV-mE-HYJ"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dfG-Kf-veF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -2207,6 +2207,7 @@
                     <connections>
                         <outlet property="contentViewHeight" destination="yTN-sj-E6k" id="LOQ-RS-Ue5"/>
                         <outlet property="createTournament" destination="iNq-n0-G7g" id="YVI-Kl-Uqp"/>
+                        <outlet property="hamburgerMenuView" destination="uWq-Dx-Fzb" id="wlo-hb-E8O"/>
                         <outlet property="tableView" destination="zv1-WK-EBV" id="awo-z2-MvR"/>
                     </connections>
                 </viewController>
@@ -2267,6 +2268,9 @@
                                                     <constraint firstAttribute="width" constant="16" id="jiv-Of-t1E"/>
                                                 </constraints>
                                                 <state key="normal" image="icon-close"/>
+                                                <connections>
+                                                    <action selector="onClickClose:" destination="iS4-yL-SnO" eventType="touchUpInside" id="0nK-S9-HNK"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoC-Rf-sox">
                                                 <rect key="frame" x="114" y="40" width="36" height="16"/>
@@ -2324,6 +2328,9 @@
                                                                         <state key="normal" title="   Home" image="icons8-home">
                                                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53989190919999996" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="onClickMenu:" destination="iS4-yL-SnO" eventType="touchUpInside" id="VSb-3a-hJD"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMj-Ur-y8k">
                                                                         <rect key="frame" x="0.0" y="38" width="179" height="26"/>
@@ -2335,6 +2342,9 @@
                                                                         <state key="normal" title="   Create Tournament" image="icons8-cricket">
                                                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53989190919999996" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="onClickCreateTournament:" destination="iS4-yL-SnO" eventType="touchUpInside" id="2cu-nS-yQ3"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piM-qL-82g">
                                                                         <rect key="frame" x="0.0" y="76" width="207" height="26"/>
@@ -2346,6 +2356,9 @@
                                                                         <state key="normal" title="   Manage Tournament" image="icons8-cap">
                                                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53989190919999996" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="onClickManageTournament:" destination="iS4-yL-SnO" eventType="touchUpInside" id="tlk-gp-VcZ"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pt3-uG-mFD">
                                                                         <rect key="frame" x="0.0" y="114" width="182" height="26"/>
@@ -2357,6 +2370,9 @@
                                                                         <state key="normal" title="   View Tournament" image="icons8-sunglasses">
                                                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53989190919999996" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </state>
+                                                                        <connections>
+                                                                            <action selector="onClickViewTournament:" destination="iS4-yL-SnO" eventType="touchUpInside" id="H3O-3q-5Jj"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <constraints>
@@ -2554,8 +2570,12 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="FbR-Tt-IyL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="profileImage" destination="yu0-aa-SEo" id="BEc-26-2Nl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8u-f3-0RC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

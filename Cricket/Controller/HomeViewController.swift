@@ -12,6 +12,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var createTournament: UIButton!
     @IBOutlet weak var contentViewHeight: NSLayoutConstraint!
+    @IBOutlet weak var hamburgerMenuView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,7 @@ class HomeViewController: UIViewController {
     
     private func setUpView() {
         navigationController?.navigationBar.isHidden = true
+        hamburgerMenuView.isHidden = true
         _ = self.createTournament.applyGradient(colours: [#colorLiteral(red: 1, green: 0.7294117647, blue: 0.5490196078, alpha: 1), #colorLiteral(red: 0.9960784314, green: 0.3607843137, blue: 0.4156862745, alpha: 1)], cornerRadius: CGFloat(4))
     }
     
@@ -39,11 +41,8 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func onClickBurgerMenu(_ sender: Any) {
-//        let vc = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as? MenuViewController
-//        guard  let menuVc = vc else {
-//            return
-//        }
-//        navigationController?.pushViewController(menuVc, animated: false)
+
+        buttonClick()
     }
     
     @IBAction func onClickCreateTournament(_ sender: Any) {
@@ -54,6 +53,18 @@ class HomeViewController: UIViewController {
         navigationController?.pushViewController(loginVc, animated: true)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let menuVC = segue.destination as? MenuViewController else { return }
+        menuVC.homeDelegate = self
+    }
+    
+    private func buttonClick() {
+        if hamburgerMenuView.isHidden {
+            hamburgerMenuView.isHidden = false
+        } else {
+            hamburgerMenuView.isHidden = true
+        }
+    }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -68,5 +79,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return cell!
     }
     
+}
+
+extension HomeViewController: HandleButtonAction {
+    func callButtonAction() {
+        buttonClick()
+    }
     
 }

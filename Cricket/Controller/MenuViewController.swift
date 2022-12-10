@@ -7,25 +7,36 @@
 
 import UIKit
 
+protocol HandleButtonAction {
+    func callButtonAction()
+}
+
 class MenuViewController: UIViewController {
 
+    var homeDelegate: HandleButtonAction?
 
     @IBOutlet weak var profileImage: CustomImageView!
+    
     override func viewDidLoad() {
         
-        profileImage.setCornerRadius()
         super.viewDidLoad()
+        setUpView()
     }
+    
+    func setUpView() {
+        profileImage.setCornerRadius()
+    }
+    
     @IBAction func onClickMenu(_ sender: Any) {
-        navigationController?.popViewController(animated: false)
+        homeDelegate?.callButtonAction()
     }
-    @IBAction func onClickTournament(_ sender: Any) {
+    @IBAction func onClickCreateTournament(_ sender: Any) {
     }
     @IBAction func onClickManageTournament(_ sender: Any) {
     }
     @IBAction func onClickViewTournament(_ sender: Any) {
     }
     @IBAction func onClickClose(_ sender: Any) {
-        navigationController?.popViewController(animated: false)
+        homeDelegate?.callButtonAction()
     }
 }
