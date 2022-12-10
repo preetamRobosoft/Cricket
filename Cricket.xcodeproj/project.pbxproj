@@ -33,6 +33,8 @@
 		66AB2EA42942E3670002F409 /* Tournament.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66AB2EA32942E3670002F409 /* Tournament.storyboard */; };
 		66AB2EB02942F4150002F409 /* OTPVerificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB2EAF2942F4150002F409 /* OTPVerificationVC.swift */; };
 		66AB2EB8294314D70002F409 /* TournamentCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB2EB7294314D70002F409 /* TournamentCodeViewController.swift */; };
+		66AB2EC329435F3E0002F409 /* AddTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB2EC229435F3E0002F409 /* AddTeamViewController.swift */; };
+		66AB2ECB29437B5D0002F409 /* OversViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB2ECA29437B5D0002F409 /* OversViewController.swift */; };
 		7218C04F293F6901009363EB /* CustomEnterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7218C04E293F6901009363EB /* CustomEnterButton.swift */; };
 		7218C054293F6EB8009363EB /* GradientButtonBackGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7218C053293F6EB7009363EB /* GradientButtonBackGround.swift */; };
 		7218C059293F70BA009363EB /* CustomCodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7218C058293F70BA009363EB /* CustomCodeTextField.swift */; };
@@ -102,6 +104,8 @@
 		66AB2EA32942E3670002F409 /* Tournament.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tournament.storyboard; sourceTree = "<group>"; };
 		66AB2EAF2942F4150002F409 /* OTPVerificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerificationVC.swift; sourceTree = "<group>"; };
 		66AB2EB7294314D70002F409 /* TournamentCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentCodeViewController.swift; sourceTree = "<group>"; };
+		66AB2EC229435F3E0002F409 /* AddTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeamViewController.swift; sourceTree = "<group>"; };
+		66AB2ECA29437B5D0002F409 /* OversViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OversViewController.swift; sourceTree = "<group>"; };
 		7218C04E293F6901009363EB /* CustomEnterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEnterButton.swift; sourceTree = "<group>"; };
 		7218C053293F6EB7009363EB /* GradientButtonBackGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonBackGround.swift; sourceTree = "<group>"; };
 		7218C058293F70BA009363EB /* CustomCodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCodeTextField.swift; sourceTree = "<group>"; };
@@ -254,10 +258,12 @@
 		662146C6293F5557006E2880 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				66AB2EC229435F3E0002F409 /* AddTeamViewController.swift */,
 				662146DD293F573D006E2880 /* RegisterViewController.swift */,
 				66214673293F54DB006E2880 /* ViewController.swift */,
 				662146CE293F56D2006E2880 /* OnboardingViewController.swift */,
 				662146D3293F56F6006E2880 /* HomeViewController.swift */,
+				66AB2ECA29437B5D0002F409 /* OversViewController.swift */,
 				662146D8293F5718006E2880 /* MenuViewController.swift */,
 				72C2B879294047D700DA5C44 /* MainPageController.swift */,
 				72C2B89829406B5400DA5C44 /* LoginViewController.swift */,
@@ -453,11 +459,13 @@
 				66AB2E6A2940ADE50002F409 /* NewUser.swift in Sources */,
 				6621467A293F54DB006E2880 /* Cricket.xcdatamodeld in Sources */,
 				72C2B89E29406C7800DA5C44 /* RadioButton.swift in Sources */,
+				66AB2ECB29437B5D0002F409 /* OversViewController.swift in Sources */,
 				66AB2E6F2940DAB70002F409 /* Validation.swift in Sources */,
 				66214670293F54DB006E2880 /* AppDelegate.swift in Sources */,
 				72C2B87F29404F7500DA5C44 /* CustomImageView.swift in Sources */,
 				662146CF293F56D2006E2880 /* OnboardingViewController.swift in Sources */,
 				66AB2EB8294314D70002F409 /* TournamentCodeViewController.swift in Sources */,
+				66AB2EC329435F3E0002F409 /* AddTeamViewController.swift in Sources */,
 				7218C054293F6EB8009363EB /* GradientButtonBackGround.swift in Sources */,
 				7218C059293F70BA009363EB /* CustomCodeTextField.swift in Sources */,
 				66AB2E5F2940A19A0002F409 /* RecentActivityViewModel.swift in Sources */,

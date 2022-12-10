@@ -17,7 +17,7 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
     }
     @IBAction func onClickMenu(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        navigationController?.popViewController(animated: false)
     }
     @IBAction func onClickTournament(_ sender: Any) {
     }
@@ -26,6 +26,6 @@ class MenuViewController: UIViewController {
     @IBAction func onClickViewTournament(_ sender: Any) {
     }
     @IBAction func onClickClose(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        navigationController?.popViewController(animated: false)
     }
 }

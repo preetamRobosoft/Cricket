@@ -39,11 +39,11 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func onClickBurgerMenu(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as? MenuViewController
-        guard  let menuVc = vc else {
-            return
-        }
-        navigationController?.pushViewController(menuVc, animated: true)
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as? MenuViewController
+//        guard  let menuVc = vc else {
+//            return
+//        }
+//        navigationController?.pushViewController(menuVc, animated: false)
     }
     
     @IBAction func onClickCreateTournament(_ sender: Any) {
