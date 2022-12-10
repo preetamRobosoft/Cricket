@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="teamAndUmpireCell" rowHeight="112" id="WzC-Ae-5sW" customClass="TeamAndUmpireTableViewCell" customModule="Cricket" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="85"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WzC-Ae-5sW" id="zum-gc-r00">
+                <rect key="frame" x="0.0" y="0.0" width="378" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQL-dz-0pp">
+                        <rect key="frame" x="15" y="8" width="348" height="68"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jpa-AY-NYS" customClass="CustomImageView" customModule="Cricket" customModuleProvider="target">
+                                <rect key="frame" x="9" y="9.5" width="49" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="2Er-zN-Cmi"/>
+                                    <constraint firstAttribute="width" constant="49" id="q7P-GB-Wne"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMk-ih-oMq">
+                                <rect key="frame" x="78" y="26" width="42.5" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="Y8w-zz-OJl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jpa-AY-NYS" firstAttribute="centerY" secondItem="HQL-dz-0pp" secondAttribute="centerY" id="8Nc-SI-u2a"/>
+                            <constraint firstItem="jpa-AY-NYS" firstAttribute="leading" secondItem="HQL-dz-0pp" secondAttribute="leading" constant="9" id="BYA-lb-JSX"/>
+                            <constraint firstItem="RMk-ih-oMq" firstAttribute="centerY" secondItem="HQL-dz-0pp" secondAttribute="centerY" id="RMZ-VW-VgI"/>
+                            <constraint firstItem="RMk-ih-oMq" firstAttribute="leading" secondItem="jpa-AY-NYS" secondAttribute="trailing" constant="20" id="Ub1-8L-keC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.92941176470588238" green="0.94117647058823528" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="HQL-dz-0pp" secondAttribute="bottom" constant="9" id="KW9-yR-yVB"/>
+                    <constraint firstItem="HQL-dz-0pp" firstAttribute="top" secondItem="zum-gc-r00" secondAttribute="top" constant="8" id="UUu-VV-oK5"/>
+                    <constraint firstAttribute="trailing" secondItem="HQL-dz-0pp" secondAttribute="trailing" constant="15" id="bNi-Wd-SGM"/>
+                    <constraint firstItem="HQL-dz-0pp" firstAttribute="leading" secondItem="zum-gc-r00" secondAttribute="leading" constant="15" id="shk-HJ-hKD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellBackGroundView" destination="HQL-dz-0pp" id="5Cr-VB-gjt"/>
+                <outlet property="name" destination="RMk-ih-oMq" id="77y-3X-u60"/>
+                <outlet property="profileImage" destination="jpa-AY-NYS" id="09C-Xh-Vo9"/>
+            </connections>
+            <point key="canvasLocation" x="375.36231884057975" y="43.191964285714285"/>
+        </tableViewCell>
+    </objects>
+</document>
