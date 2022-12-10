@@ -46,6 +46,8 @@
 		728E7B5E29444AA300C471AC /* UmpiresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728E7B5D29444AA300C471AC /* UmpiresViewController.swift */; };
 		728E7B6329444B2E00C471AC /* GroundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728E7B6229444B2E00C471AC /* GroundsViewController.swift */; };
 		728E7B6829444B9E00C471AC /* AddUmpireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728E7B6729444B9D00C471AC /* AddUmpireViewController.swift */; };
+		728E7B9E2944605F00C471AC /* TeamAndUmpireTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 728E7B9D2944605F00C471AC /* TeamAndUmpireTableViewCell.xib */; };
+		728E7BA3294460A900C471AC /* TeamAndUmpireTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728E7BA2294460A900C471AC /* TeamAndUmpireTableViewCell.swift */; };
 		72C2B87A294047D700DA5C44 /* MainPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C2B879294047D700DA5C44 /* MainPageController.swift */; };
 		72C2B87F29404F7500DA5C44 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C2B87E29404F7500DA5C44 /* CustomImageView.swift */; };
 		72C2B8842940584C00DA5C44 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C2B8832940584C00DA5C44 /* MenuViewModel.swift */; };
@@ -120,6 +122,8 @@
 		728E7B5D29444AA300C471AC /* UmpiresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UmpiresViewController.swift; sourceTree = "<group>"; };
 		728E7B6229444B2E00C471AC /* GroundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundsViewController.swift; sourceTree = "<group>"; };
 		728E7B6729444B9D00C471AC /* AddUmpireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUmpireViewController.swift; sourceTree = "<group>"; };
+		728E7B9D2944605F00C471AC /* TeamAndUmpireTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamAndUmpireTableViewCell.xib; sourceTree = "<group>"; };
+		728E7BA2294460A900C471AC /* TeamAndUmpireTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamAndUmpireTableViewCell.swift; sourceTree = "<group>"; };
 		72C2B879294047D700DA5C44 /* MainPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageController.swift; sourceTree = "<group>"; };
 		72C2B87E29404F7500DA5C44 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		72C2B8832940584C00DA5C44 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
@@ -234,6 +238,8 @@
 				72C2B89D29406C7800DA5C44 /* RadioButton.swift */,
 				72C2B8A229406CFC00DA5C44 /* ProfilePhotoImageView.swift */,
 				72C2B8A729406D2D00DA5C44 /* TriangleView.swift */,
+				728E7B9D2944605F00C471AC /* TeamAndUmpireTableViewCell.xib */,
+				728E7BA2294460A900C471AC /* TeamAndUmpireTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -418,6 +424,7 @@
 			files = (
 				6621467F293F54DC006E2880 /* LaunchScreen.storyboard in Resources */,
 				66AB2EA42942E3670002F409 /* Tournament.storyboard in Resources */,
+				728E7B9E2944605F00C471AC /* TeamAndUmpireTableViewCell.xib in Resources */,
 				6621467C293F54DC006E2880 /* Assets.xcassets in Resources */,
 				66214677293F54DB006E2880 /* Main.storyboard in Resources */,
 			);
@@ -471,6 +478,7 @@
 				66AB2E6A2940ADE50002F409 /* NewUser.swift in Sources */,
 				6621467A293F54DB006E2880 /* Cricket.xcdatamodeld in Sources */,
 				72C2B89E29406C7800DA5C44 /* RadioButton.swift in Sources */,
+				728E7BA3294460A900C471AC /* TeamAndUmpireTableViewCell.swift in Sources */,
 				66AB2ECB29437B5D0002F409 /* OversViewController.swift in Sources */,
 				66AB2E6F2940DAB70002F409 /* Validation.swift in Sources */,
 				66214670293F54DB006E2880 /* AppDelegate.swift in Sources */,
