@@ -35,6 +35,8 @@
 		66AB2EB8294314D70002F409 /* TournamentCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB2EB7294314D70002F409 /* TournamentCodeViewController.swift */; };
 		66AB2EC329435F3E0002F409 /* AddTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB2EC229435F3E0002F409 /* AddTeamViewController.swift */; };
 		66AB2ECB29437B5D0002F409 /* OversViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AB2ECA29437B5D0002F409 /* OversViewController.swift */; };
+		66F26D412944650700DCB9E5 /* Bio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F26D402944650700DCB9E5 /* Bio.storyboard */; };
+		66F26D462944666400DCB9E5 /* UmpireBioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F26D452944666400DCB9E5 /* UmpireBioViewController.swift */; };
 		7218C04F293F6901009363EB /* CustomEnterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7218C04E293F6901009363EB /* CustomEnterButton.swift */; };
 		7218C054293F6EB8009363EB /* GradientButtonBackGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7218C053293F6EB7009363EB /* GradientButtonBackGround.swift */; };
 		7218C059293F70BA009363EB /* CustomCodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7218C058293F70BA009363EB /* CustomCodeTextField.swift */; };
@@ -109,6 +111,8 @@
 		66AB2EB7294314D70002F409 /* TournamentCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentCodeViewController.swift; sourceTree = "<group>"; };
 		66AB2EC229435F3E0002F409 /* AddTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeamViewController.swift; sourceTree = "<group>"; };
 		66AB2ECA29437B5D0002F409 /* OversViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OversViewController.swift; sourceTree = "<group>"; };
+		66F26D402944650700DCB9E5 /* Bio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bio.storyboard; sourceTree = "<group>"; };
+		66F26D452944666400DCB9E5 /* UmpireBioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UmpireBioViewController.swift; sourceTree = "<group>"; };
 		7218C04E293F6901009363EB /* CustomEnterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEnterButton.swift; sourceTree = "<group>"; };
 		7218C053293F6EB7009363EB /* GradientButtonBackGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonBackGround.swift; sourceTree = "<group>"; };
 		7218C058293F70BA009363EB /* CustomCodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCodeTextField.swift; sourceTree = "<group>"; };
@@ -189,6 +193,7 @@
 				6621467D293F54DC006E2880 /* LaunchScreen.storyboard */,
 				66214680293F54DC006E2880 /* Info.plist */,
 				66214678293F54DB006E2880 /* Cricket.xcdatamodeld */,
+				66F26D402944650700DCB9E5 /* Bio.storyboard */,
 			);
 			path = Cricket;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 				728E7B5D29444AA300C471AC /* UmpiresViewController.swift */,
 				728E7B6229444B2E00C471AC /* GroundsViewController.swift */,
 				728E7B6729444B9D00C471AC /* AddUmpireViewController.swift */,
+				66F26D452944666400DCB9E5 /* UmpireBioViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -419,6 +425,7 @@
 				6621467F293F54DC006E2880 /* LaunchScreen.storyboard in Resources */,
 				66AB2EA42942E3670002F409 /* Tournament.storyboard in Resources */,
 				6621467C293F54DC006E2880 /* Assets.xcassets in Resources */,
+				66F26D412944650700DCB9E5 /* Bio.storyboard in Resources */,
 				66214677293F54DB006E2880 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +467,7 @@
 				662146D9293F5718006E2880 /* MenuViewController.swift in Sources */,
 				728E7B5E29444AA300C471AC /* UmpiresViewController.swift in Sources */,
 				662146BF293F5549006E2880 /* NetworkManager.swift in Sources */,
+				66F26D462944666400DCB9E5 /* UmpireBioViewController.swift in Sources */,
 				662146D4293F56F6006E2880 /* HomeViewController.swift in Sources */,
 				72C2B87A294047D700DA5C44 /* MainPageController.swift in Sources */,
 				728E7B6829444B9E00C471AC /* AddUmpireViewController.swift in Sources */,
